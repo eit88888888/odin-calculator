@@ -22,10 +22,12 @@ body {
 }
 
 .display {
+    max-width: 350px;
+    text-align: right;
     font-size: 72px;
     color: #ffffff;
-    text-align: right;
     letter-spacing: 2px;
+    overflow: hidden
 }
 
 .keyboard {

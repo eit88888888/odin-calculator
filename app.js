@@ -1,3 +1,29 @@
+const buttons = document.querySelectorAll('.btn');
+const display = document.querySelector(".display")
+
+let first = 0;
+let second = '';
+
+const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+const rps = ["X1", "X2", "X3"];
+const operators = ["add", "subtract", "multiply", "divide", "equal"]
+buttons.forEach(function(currentBtn){
+  currentBtn.addEventListener('click', event => {
+    if (numbers.indexOf(event.target.value) >= 0){
+        second += event.target.value;
+        display.textContent = second;
+    } else if (operators.indexOf(event.target.value) >= 0) {
+        first = operate(first, event.target.value, second);
+        display.textContent = first;
+        second = '';
+    }
+    console.log(first, second);
+
+
+    
+  })
+})
+
 function add(a, b) {
     return a + b;
 }
@@ -27,7 +53,5 @@ function operate(first, operator, second) {
     }
     
 }
-console.log(operate(2, "add", 2));
-console.log(operate(2, "subtract", 2));
-console.log(operate(6, "multiply", 2));
-console.log(operate(6, "divide", 2));
+
+
