@@ -17,13 +17,17 @@ function divide(a, b) {
 function operate(first, operator, second) {
     switch (operator) {
         case "add":
-            add(first, second);
+           return add(first, second);
         case "subtract":
-            subtract(first, second);
+           return subtract(first, second);
         case "multiply":
-            multiply(first, second);
+            return multiply(first, second);
         case "divide":
-            divide(first, second);
+            return divide(first, second);
     }
     
 }
+console.log(operate(2, "add", 2));
+console.log(operate(2, "subtract", 2));
+console.log(operate(6, "multiply", 2));
+console.log(operate(6, "divide", 2));

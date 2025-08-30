@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+   background-color: #161616;
+   font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-calc {
+    background-color: #000000;
+    border-radius: 20px;
+    padding: 24px 14px 36px 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.display {
+    font-size: 72px;
+    color: #ffffff;
+    text-align: right;
+    letter-spacing: 2px;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.row {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    width: 86px;
+    height: 82px;
+    background-color: #2B2B2D;
+    border-radius: 41px;
+    display: flex;
+    border-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+}
+
+#jeckpot {
+    background-color: #5C5C5E;
+}
+
+#operators {
+    background-color: #FF9F0A;
+}
+
+
+
