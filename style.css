@@ -55,12 +55,24 @@ body {
     font-size: 36px;
 }
 
-#jeckpot {
-    background-color: #5C5C5E;
+.btn:hover {
+    background-color: #464648;
+}
+
+#jackpot {
+    background-color: #4F4F50;
+}
+
+#jackpot:hover {
+    background-color: #666666;
 }
 
 #operators {
     background-color: #FF9F0A;
+}
+
+#operators:hover {
+    background-color: #FFC976;
 }
 
 
